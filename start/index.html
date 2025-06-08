@@ -1,0 +1,52 @@
+<!-- start/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Quiz - Start</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="../home/index.html" class="actions"
+          ><i class="fas fa-arrow-left"></i> Home</a
+        >
+      </div>
+      <div class="actions">
+        <button onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <!-- method="GET" and name="mode" -->
+      <form action="../quiz/index.html" method="GET">
+        <h2>Start Quiz</h2>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter your name"
+          required
+        />
+        <select name="mode" required>
+          <option value="" disabled selected>Select mode</option>
+          <option value="easy">Easy (True/False)</option>
+          <option value="medium">Medium (Multiple-choice)</option>
+          <option value="hard">Hard (Fill-in)</option>
+        </select>
+        <button type="submit">Start Quiz</button>
+      </form>
+    </main>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("light-theme");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Quiz - Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="fas fa-bolt"></i>
+        QQ - Quick Quiz
+      </div>
+      <div class="actions">
+        <a href="../start/index.html"> Take a Quick Quiz </a>
+        <button onclick="toggleTheme()"><i class="fas fa-moon"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <h1>Welcome to Quick Quiz!</h1>
+      <p>Your fun and fast way to test your knowledge. Click above to begin.</p>
+    </main>
+
+    <script>
+      function toggleTheme() {
+        document.body.classList.toggle("light-theme");
+      }
+    </script>
+  </body>
+</html>
